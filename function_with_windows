@@ -38,7 +38,7 @@ resource "azurerm_windows_function_app" "app_benito" {
 }
 
 # Création de la politique WAF
-resource "azurerm_web_application_firewall_policy" "waf_benito" {
+resource "azurerm_web_application_firewall_policy" "waf_benitos" {
   name                = "benitomcitfunction"
   resource_group_name = azurerm_resource_group.rg_benito.name
   location            = azurerm_resource_group.rg_benito.location
